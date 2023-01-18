@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>music player</title>
+	<link rel="stylesheet" type="text/css" href="major project.css">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="title-bar">
+	<div class="logo">
+	<div class="image" >
+		<img src="spotify.png">
+	</div>
+	<div class="text">
+		<span>MyPlayer</span>
+	</div>
+</div>
+	<div class="flex-them">
+		<div class="search">
+		<span>
+			<i class="fas fa-search"></i>
+		</span>
+		<div class="search-item">
+			<input type="text" name="search" placeholder="Search for the music you love">
+		</div>
+
+	</div>
+	<div class="bell">
+		<span >
+			<a href="#"><i class="fas fa-bell"></i></a>
+		</span>
+	</div>
+	<div class="my-profile">
+		<a href="#"><img src="C:\Users\shubham mishra\Documents\Shubham cpp\html\basics\my image2.jpg"></a>
+	</div>
+	</div>
+</section>
+<section class="rest-of-the-page">
+
+	<!--Creating Carousel-->
+
+<div id="slider">
+   <input type="radio" name="slider" id="slide1" checked>
+   <input type="radio" name="slider" id="slide2">
+   <input type="radio" name="slider" id="slide3">
+   <input type="radio" name="slider" id="slide4">
+   <div id="slides">
+      <div id="overflow">
+         <div class="inner">
+            <div class="slide slide_1">
+               <div class="slide-content">
+                  <a href="">
+                     <img src="BANNER_5.webp">
+                  </a>
+               </div>
+            </div>
+            <div class="slide slide_2">
+               <div class="slide-content">
+                  <a href="">
+                     <img src="BANNER_2.webp">
+                  </a>
+               </div>
+            </div>
+            <div class="slide slide_3">
+               <div class="slide-content">
+                  <a href="">
+                     <img src="BANNER_3.webp">
+                  </a>
+               </div>
+            </div>
+            <div class="slide slide_4">
+               <div class="slide-content">
+                  <a href="">
+                     <img src="BANNER_4.webp">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div id="controls">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+   </div>
+   <div id="bullets">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+   </div>
+</div>
+
+
+<!-- Creating Queue-->
+
+
+<div class="aside">
+	<h1>Queue</h1>
+	<div class="Elements">
+		<ol>
+			<li>
+				<div class="Element-image">
+					<img src="https://a10.gaanacdn.com/images/albums/95/3235595/crop_55x55_3235595.jpg">
+				</div>
+				<div >
+					<audio src=""></audio>
+					<span>Song name</span>
+					<br>
+					<span style="font-size: 10px;">Artist Name</span>
+				</div>
+			</li>
+			<li>
+				<div class="Element-image">
+					<img src="https://a10.gaanacdn.com/images/albums/95/3235595/crop_55x55_3235595.jpg">
+				</div>
+				<div>
+					<span>Song name</span>
+					<br>
+					<span style="font-size: 10px;">Artist Name</span>
+				</div>
+			</li>
+			<li>
+				<div class="Element-image">
+					<img src="https://a10.gaanacdn.com/images/albums/95/3235595/crop_55x55_3235595.jpg">
+				</div>
+				<div>
+					<span>Song name</span>
+					<br>
+					<span style="font-size: 10px;">Artist Name</span>
+				</div>
+			</li>
+			<li>
+				<div class="Element-image">
+					<img src="https://a10.gaanacdn.com/images/albums/95/3235595/crop_55x55_3235595.jpg">
+				</div>
+				<div>
+					<span>Song name</span>
+					<br>
+					<span style="font-size: 10px;">Artist Name</span>
+				</div>
+			</li>
+			<li>
+				<div class="Element-image">
+					<img src="https://a10.gaanacdn.com/images/albums/95/3235595/crop_55x55_3235595.jpg">
+				</div>
+				<div>
+					<span>Song name</span>
+					<br>
+					<span style="font-size: 10px;">Artist Name</span>
+				</div>
+			</li>
+			<li>
+				<div class="Element-image">
+					<img src="https://a10.gaanacdn.com/images/albums/95/3235595/crop_55x55_3235595.jpg">
+				</div>
+				<div>
+					<span>Song name</span>
+					<br>
+					<span style="font-size: 10px;">Artist Name</span>
+				</div>
+			</li>
+			<li>
+				<div class="Element-image">
+					<img src="https://a10.gaanacdn.com/images/albums/95/3235595/crop_55x55_3235595.jpg">
+				</div>
+				<div>
+					<span>Song name</span>
+					<br>
+					<span style="font-size: 10px;">Artist Name</span>
+				</div>
+			</li>
+			<li>
+				<div class="Element-image">
+					<img src="https://a10.gaanacdn.com/images/albums/95/3235595/crop_55x55_3235595.jpg">
+				</div>
+				<div>
+					<span>Song name</span>
+					<br>
+					<span style="font-size: 10px;">Artist Name</span>
+				</div>
+			</li>
+		</ol>
+	</div>
+</div>
+
+<div class="covering-space"></div>
+
+<!--Latest Release--> 
+
+<div class="latest-release">
+	<h1 style="position: static;">Latest Release</h1>
+
+	<div class="tracks">
+
+		<div class="latest track-1">
+			<audio controls>
+				<source id="Song" src="Monster.mp3" type="audio/mp3">
+			</audio>
+			<div class="poster" style="display: inline-block;">
+				<img src="image.webp">
+			</div>
+			<span>Monsters You Made<br>AUG 22, 2020</span>
+			<div class="dropdown">
+			 	<span>...</span>
+			 	<input type="checkbox"  id="Play">
+			 	<input type="checkbox"  id="Add">
+			 	<label for="Play" class="buttons">Play</label>
+			 	<label for="Add" class="buttons">Add to Queue</label>
+			</div>
+		</div>
+		
+		<div class="latest track-1">
+			<audio controls>
+				<source id="Song" src="Monster.mp3" type="audio/mp3">
+			</audio>
+			<div class="poster" style="display: inline-block;">
+				<img src="image.webp">
+			</div>
+			<span>Monsters You Made<br>AUG 22, 2020</span>
+			<div class="dropdown">
+			 	<span>...</span>
+			 	<input type="checkbox"  id="Play">
+			 	<input type="checkbox"  id="Add">
+			 	<label for="Play" class="buttons">Play</label>
+			 	<label for="Add" class="buttons">Add to Queue</label>
+			</div>
+		</div>
+
+		<div class="latest track-1">
+			<audio controls>
+				<source id="Song" src="Monster.mp3" type="audio/mp3">
+			</audio>
+			<div class="poster" style="display: inline-block;">
+				<img src="image.webp">
+			</div>
+			<span>Monsters You Made<br>AUG 22, 2020</span>
+			<div class="dropdown">
+			 	<span>...</span>
+			 	<input type="checkbox"  id="Play">
+			 	<input type="checkbox"  id="Add">
+			 	<label for="Play" class="buttons">Play</label>
+			 	<label for="Add" class="buttons">Add to Queue</label>
+			</div>
+		</div>
+
+		<div class="latest track-1">
+			<audio controls>
+				<source id="Song" src="Monster.mp3" type="audio/mp3">
+			</audio>
+			<div class="poster" style="display: inline-block;">
+				<img src="image.webp">
+			</div>
+			<span>Monsters You Made<br>AUG 22, 2020</span>
+			<div class="dropdown">
+			 	<span>...</span>
+			 	<input type="checkbox"  id="Play">
+			 	<input type="checkbox"  id="Add">
+			 	<label for="Play" class="buttons">Play</label>
+			 	<label for="Add" class="buttons">Add to Queue</label>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+<!--Top Artist-->
+
+<div class="top-artists">
+	<h1>Popular Artist</h1>
+	<div class="Artists">
+		
+		<div class="Artist-new">
+			<a href="ed sheeran.html" target="_blank">
+			<div class="artist-image">
+				<img src="https://img.wynk.in/unsafe/180x180/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/package/sheeran-300x300.png">
+			</div>
+			<span >Ed Sheeran</span>
+		</div></a>
+		<div class="Artist-new">
+			<a href="ed sheeran.html" target="_blank">
+			<div class="artist-image">
+				<img src="https://img.wynk.in/unsafe/180x180/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/package/rehman-300x300.png">
+			</div>
+			<span>A R Rehman</span>
+		</div></a>
+		<div class="Artist-new">
+			<a href="ed sheeran.html" target="_blank">
+			<div class="artist-image">
+				<img src="https://img.wynk.in/unsafe/180x180/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/package/beiber.jpg">
+			</div>
+			<span>Justin Beiber</span>
+		</div></a>
+		<div class="Artist-new">
+			<a href="ed sheeran.html" target="_blank">
+			<div class="artist-image">
+				<img src="https://img.wynk.in/unsafe/180x180/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/package/Kishore.png">
+			</div></a>
+			<span>Kishore Kumar</span>
+		</div>
+		<div class="Artist-new">
+			<a href="ed sheeran.html" target="_blank">
+			<div class="artist-image">
+				<img src="https://img.wynk.in/unsafe/180x180/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/package/maroon5-300x300.png">
+			</div>
+			<span>Maroon-5</span>
+		</div></a>
+		<div class="Artist-new">
+			<a href="ed sheeran.html" target="_blank">
+			<div class="artist-image">
+				<img src="eminem.jpg">
+			</div>
+			<span>Eminem</span>
+		</div></a>
+		<div class="Artist-new">
+			<div class="artist-image">
+				<img src="https://img.wynk.in/unsafe/180x180/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/package/arijit-300x300.png">
+			</div>
+			<span>Arijit Singh</span>
+		</div>
+
+	</div>
+</div>
+
+<!-- Stations-->
+
+<div class="genre">
+	<div class="type-1 type">
+		<span>Love</span>
+	</div>
+	<div class="type-2 type">
+		<span>Retro</span>
+	</div>
+	<div class="type-3 type">
+		<span>Chill</span>
+	</div>
+	<div class="type-4 type">
+		<span>Workout</span>
+	</div>
+	<div class="type-5 type">
+		<span>Rock</span>
+	</div>
+	<div class="type-6 type">
+		<span>Pop</span>
+	
+    </div>
+</div>
+
+<!--My-Moods-->
+
+<div class="My-moods ">
+	<div class="mood-1 moods">
+		<span>Party</span>
+	</div>
+	<div class="mood-2 moods">
+		<span>Electronic</span>
+	</div>
+	<div class="mood-3 moods">
+		<span>Road Trip</span>
+	</div>
+</div>
+
+<!--Latest Tracks-->
+
+<div class="latest-tracks">
+	<h1>Latest English</h1>
+	<div class="Song-container">
+		<div class="latest-1">
+			<div class="latest-image">
+				<img src="https://img.wynk.in/unsafe/150x150/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/music/1598420057/srch_universalmusic_00602507477325-USUM72007216.jpg">
+			</div>
+			<div>
+				<span style="margin-left: 0;">Cry About It Later</span>
+				<br>
+			    <span style="font-size: 10px; margin-left: 0;">Katy Perry-Smile</span>
+			</div>
+		</div>
+		<div class="latest-2">
+			<div class="latest-image">
+				<img src="https://img.wynk.in/unsafe/150x150/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_timewarner/music/srch_timewarner_190295162962_A10302B0005410521V.jpg">
+			</div>
+			<div>
+				<span style="margin-left: 0;">Cry About It Later</span>
+				<br>
+			    <span style="font-size: 10px; margin-left: 0;">Katy Perry-Smile</span>
+			</div>
+		</div>
+		<div class="latest-3">
+			<div class="latest-image">
+				<img src="https://img.wynk.in/unsafe/150x150/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1598440183/srch_timesmusic_NLE3T2000003.jpg">
+			</div>
+			<div>
+				<span style="margin-left: 0;">Cry About It Later</span>
+				<br>
+			    <span style="font-size: 10px; margin-left: 0;">Katy Perry-Smile</span>
+			</div>
+		</div>
+		<div class="latest-4">
+			<div class="latest-image">
+				<img src="https://img.wynk.in/unsafe/150x150/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/music/1598411164/srch_universalmusic_00810045112640-QMJMT2003192.jpg">
+			</div>
+			<div>
+				<span style="margin-left: 0;">Cry About It Later</span>
+				<br>
+			    <span style="font-size: 10px; margin-left: 0;">Katy Perry-Smile</span>
+			</div>
+		</div>
+		<div class="latest-5">
+			<div class="latest-image">
+				<img src="https://img.wynk.in/unsafe/150x150/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_timewarner/music/srch_timewarner_075679805706_A10302B0005402209E.jpg">
+			</div>
+			<div>
+				<span style="margin-left: 0;">Cry About It Later</span>
+				<br>
+			    <span style="font-size: 10px; margin-left: 0;">Katy Perry-Smile</span>
+			</div>
+		</div>
+		<div class="latest-6">
+			<div class="latest-image">
+				<img src="https://img.wynk.in/unsafe/150x150/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/music/1596775940/srch_universalmusic_00602435085302-USUG12002597.jpg">
+			</div>
+			<div>
+				<span style="margin-left: 0;">Cry About It Later</span>
+				<br>
+			    <span style="font-size: 10px; margin-left: 0;">Katy Perry-Smile</span>
+			</div>
+		</div>
+		<div class="latest-7">
+			<div class="latest-image">
+				<img src="https://img.wynk.in/unsafe/150x150/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_timewarner/music/srch_timewarner_075679805393_A10302B00053959525.jpg">
+			</div>
+			<div>
+				<span style="margin-left: 0;">Cry About It Later</span>
+				<br>
+			    <span style="font-size: 10px; margin-left: 0;">Katy Perry-Smile</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Latest-Hindi -->
+
+<div class="latest-tracks">
+	<h1>Latest Hindi</h1>
+	<div class="Song-container">
+		<div class="latest-1">
+			<div class="latest-image">
+				<img src="https://img.wynk.in/unsafe/150x150/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1570078232/49360087.jpg">
+			</div>
+			<div>
+				<span style="margin-left: 0;">Cry About It Later</span>
+				<br>
+			    <span style="font-size: 10px; margin-left: 0;">Katy Perry-Smile</span>
+			</div>
+		</div>
+		<div class="latest-2">
+			<div class="latest-image">
+				<img src="https://img.wynk.in/unsafe/150x150/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1594791152/54811256.jpg">
+			</div>
+			<div>
+				<span style="margin-left: 0;">Cry About It Later</span>
+				<br>
+			    <span style="font-size: 10px; margin-left: 0;">Katy Perry-Smile</span>
+			</div>
+		</div>
+		<div class="latest-3">
+			<div class="latest-image">
+				<img src="https://img.wynk.in/unsafe/150x150/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1591164753/53946490.jpg">
+			</div>
+			<div>
+				<span style="margin-left: 0;">Cry About It Later</span>
+				<br>
+			    <span style="font-size: 10px; margin-left: 0;">Katy Perry-Smile</span>
+			</div>
+		</div>
+		<div class="latest-4">
+			<div class="latest-image">
+				<img src="https://img.wynk.in/unsafe/150x150/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1566875956/srch_zeemusic_INZ031406006.jpg">
+			</div>
+			<div>
+				<span style="margin-left: 0;">Cry About It Later</span>
+				<br>
+			    <span style="font-size: 10px; margin-left: 0;">Katy Perry-Smile</span>
+			</div>
+		</div>
+		<div class="latest-5">
+			<div class="latest-image">
+				<img src="https://img.wynk.in/unsafe/150x150/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1550814357/47309655.jpg">
+			</div>
+			<div>
+				<span style="margin-left: 0;">Cry About It Later</span>
+				<br>
+			    <span style="font-size: 10px; margin-left: 0;">Katy Perry-Smile</span>
+			</div>
+		</div>
+		<div class="latest-6">
+			<div class="latest-image">
+				<img src="https://img.wynk.in/unsafe/150x150/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1567233066/49136601.jpg">
+			</div>
+			<div>
+				<span style="margin-left: 0;">Cry About It Later</span>
+				<br>
+			    <span style="font-size: 10px; margin-left: 0;">Katy Perry-Smile</span>
+			</div>
+		</div>
+		<div class="latest-7">
+			<div class="latest-image">
+				<img src="https://img.wynk.in/unsafe/150x150/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1563902379/srch_orchard_194491081751.jpg">
+			</div>
+			<div>
+				<span style="margin-left: 0;">Cry About It Later</span>
+				<br>
+			    <span style="font-size: 10px; margin-left: 0;">Katy Perry-Smile</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="bottom_player">
+	<audio id = "player" src = "Monster.mp3"></audio>
+	<div class="song-image">
+		<img src="image.webp">
+	</div >
+	<div class="song-name">
+		<span>Monsters You Made</span>
+	</div>
+<div class="controls">
+   <button onclick = "document.getElementById('player').volume += 0.2"><i class="fas fa-plus"></i></button>
+   <button onclick = "document.getElementById('player').play()"><i class="fas fa-play"></i></button>
+   <button onclick = "document.getElementById('player').pause()"><i class="fas fa-pause"></i></button>
+   <button onclick = "document.getElementById('player').volume -= 0.2"><i class="fas fa-minus"></i></button>
+   
+</div>
+</div>
+</section>
+</body>
+</html>

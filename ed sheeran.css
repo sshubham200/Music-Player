@@ -1,0 +1,260 @@
+body{
+	background-color: #1c1c30;
+}
+section{
+	display: inline-block;
+}
+.title-bar{
+	width:100%;
+	height: 50px;
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+}
+.logo{
+	width: 250px;
+}
+.logo div{
+	display: inline-block;
+}
+.image{
+	height: 30px;
+	width: 30px;
+}
+.image img{
+	height: 100%;
+	width: 100%;
+}
+.text{
+	height: 30px;
+	width: 100px; 
+}
+.text span{
+	color: white;
+	font-size: 30px;
+}
+.flex-them {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-content: center;
+	width: 40%;
+}
+.search{
+	width: 70%;
+	margin-right: 20px;
+	padding-bottom: 4px;
+	height: 30px;
+	background-color: black;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.search span{
+	width: 30px;
+	display: inline-block;
+	color: white;
+}
+.search-item{
+	width: 80%;
+	display: inline-block;
+	background-color: #1e2654;
+}
+.search input{
+	width: 100%;
+	height: 30px;
+	border-radius: 0px 8px 8px 0px;
+	color: cyan;
+	border: none;
+	background-color: black;
+}
+
+.bell span a i{
+	color: white;
+	font-size: 30px;
+}
+
+.my-profile{
+	height: 50px;
+	width: 50px;
+	margin: 0px 0px 0px 20px;
+}
+.my-profile img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+.Introduction{
+	margin-top: 50px;
+	margin-left: 8%;
+	width: 60%;
+	height: 50vh;
+	
+	color: white;
+	font-family: arial;
+	background-color: #1e2654;
+	overflow: hidden;
+}
+.intro{
+	display: flex;
+	height: inherit;
+}
+.image-1{
+	height: inherit;
+	width: 40%;
+	margin-right: 30px;
+	display: inline-block;
+}
+.image-1 img{
+	height: 100%;
+	width: 100%;
+	float: left;
+}
+.about{
+	width: 80%;
+	display: inline-block;
+}
+.about span{
+	color: #b5adad;
+	font-size: 13px;
+}
+.play{
+	margin-top: 20px;
+	margin-right: 50px;
+	width: 70px;
+	background-image: linear-gradient( to right,blue,violet);
+	border: none;
+	display: inline;
+}
+.follow{
+	background-color: #1e2654;
+	color: white;
+	border: none;
+	display: inline;
+}
+
+
+
+.similar-artist{
+	height: 50vh;
+	width: 25%;
+	margin-left: 2%;
+	background-color: black;
+	color:white;
+	font-family: arial;
+}
+.list{
+	height: 75%;
+	width: 80%
+	display: flex;
+	flex-flow: row wrap;
+	overflow: hidden;
+}
+.list::-webkit-scrollbar{
+	display: none;
+}
+.artists{
+	width: inherit;
+	height: 50px;
+	display: flex;
+	flex-flow: column wrap;
+	margin-top: 10px;
+}
+.artist_image{
+	height: 50px;
+	width: 50px;
+}
+.artist_image img{
+	height: 100%;
+	width: 100%;
+}
+.name{
+	width: 70%;
+}
+
+
+
+
+.Playlist{
+	margin-top: -40px;
+	margin-left: 8%;
+	width: 60%;
+	height: 50vh;
+	color: white;
+	font-family: arial;
+	background-color:#1c1c30 ;
+	overflow: hidden;
+}
+.Elements{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	overflow-y: scroll;
+}
+.Elements::-webkit-scrollbar{
+	display: none;
+}
+.Elements ol{
+	width: 100%;
+	margin: 0;
+}
+.Elements ol li{
+	height: 50px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-left: -40px;
+	margin-top: 10px;
+	background-color: #1e2654;
+}
+.Element-image{
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	margin-right: 20px;
+}
+.Element-image img{
+	height: 100%;
+	width: 100%;
+}
+
+
+
+
+.Recently-played{
+	height: 50vh;
+	width: 25%;
+	margin-left: 2%;
+	margin-top: 30px;
+	background-color: black;
+	color:white;
+	font-family: arial;
+}
+.list{
+	height: 75%;
+	width: 80%
+	display: flex;
+	flex-flow: row wrap;
+	overflow: hidden;
+}
+.list::-webkit-scrollbar{
+	display: none;
+}
+.artists{
+	width: inherit;
+	height: 50px;
+	display: flex;
+	flex-flow: column wrap;
+	margin-top: 10px;
+}
+.artist_image{
+	height: 50px;
+	width: 50px;
+}
+.artist_image img{
+	height: 100%;
+	width: 100%;
+}
+.name{
+	width: 70%;
+}

@@ -1,0 +1,524 @@
+body{
+	background-color: #1e2654;
+}
+.title-bar{
+	width:100%;
+	height: 50px;
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+}
+.logo{
+	width: 250px;
+}
+.logo div{
+	display: inline-block;
+}
+.image{
+	height: 30px;
+	width: 30px;
+}
+.image img{
+	height: 100%;
+	width: 100%;
+}
+.text{
+	height: 30px;
+	width: 100px; 
+}
+.text span{
+	color: white;
+	font-size: 30px;
+}
+.flex-them {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-content: center;
+	width: 40%;
+}
+.search{
+	width: 70%;
+	margin-right: 20px;
+	padding-bottom: 4px;
+	height: 30px;
+	background-color: black;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.search span{
+	width: 30px;
+	display: inline-block;
+	color: white;
+}
+.search-item{
+	width: 80%;
+	display: inline-block;
+	background-color: #1e2654;
+}
+.search input{
+	width: 100%;
+	height: 30px;
+	border-radius: 0px 8px 8px 0px;
+	color: cyan;
+	border: none;
+	background-color: black;
+}
+
+.bell span a i{
+	color: white;
+	font-size: 30px;
+}
+
+.my-profile{
+	height: 50px;
+	width: 50px;
+	margin: 0px 0px 0px 20px;
+}
+.my-profile img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+
+.covering-space{
+	width: 70%;
+	height: 400px;
+}
+.rest-of-the-page{
+	width: 100%;
+	height: 100vh;
+	font-family: Arial;
+	color: white;
+}
+
+/* creating carousel*/
+
+#slider {
+	padding-left: 50px;
+	display: inline-block;
+	position: absolute;
+	margin-top: 30px;
+	margin-left: 60px;
+   width: 60%;
+   max-width: 100%;
+   text-align: center;
+}
+#slider input[type=radio] {
+   display: none;
+}
+#slider label {
+   cursor:pointer;
+   text-decoration: none;
+}
+#slides {
+   padding: 10px;
+   background: #1e2654;
+   position: relative;
+   z-index: 1;
+}
+#overflow {
+   width: 100%;
+   overflow: hidden;
+}
+#slide1:checked ~ #slides .inner {
+   margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+   margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+   margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+   margin-left: -300%;
+}
+#slides .inner {
+   transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   width: 400%;
+   line-height: 0;
+   height: 300px;
+  
+}
+#slides .slide {
+   width: 25%;
+   float:left;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   color: #fff;
+}
+.slide img{
+	border-radius: 20px;
+}
+
+#controls {
+   margin: -180px 0 0 0;
+   width: 100%;
+   height: 50px;
+   z-index: 3;
+   position: relative;
+}
+#controls label {
+   transition: opacity 0.2s ease-out;
+   display: none;
+   width: 50px;
+   height: 50px;
+   opacity: .4;
+}
+#controls label:hover {
+   opacity: 1;
+}
+/*adding funcnality*/
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+   background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+   float:right;
+   margin: 0 -50px 0 0;
+   display: block;
+}
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1) {
+   background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+   float:left;
+   margin: 0 0 0 -50px;
+   display: block;
+}
+#bullets {
+   margin: 150px 0 0;
+   text-align: center;
+}
+#bullets label {
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   border-radius:100%;
+   background: #ccc;
+   margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+   background: #444;
+}
+@media screen and (max-width: 900px) {
+   #slide1:checked ~ #controls label:nth-child(2),
+   #slide2:checked ~ #controls label:nth-child(3),
+   #slide3:checked ~ #controls label:nth-child(4),
+   #slide4:checked ~ #controls label:nth-child(1),
+   #slide1:checked ~ #controls label:nth-last-child(2),
+   #slide2:checked ~ #controls label:nth-last-child(3),
+   #slide3:checked ~ #controls label:nth-last-child(4),
+   #slide4:checked ~ #controls label:nth-last-child(1) {
+      margin: 0;
+   }
+   #slides {
+      max-width: calc(100% - 140px);
+      margin: 0 auto;
+   }
+}
+
+/*aside section*/
+
+.aside{
+	position: absolute;
+	right: 0;
+	width: 25%;
+	height: 90vh;
+	margin-top: 30px;
+}
+.Elements{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	overflow-y: scroll;
+}
+.Elements::-webkit-scrollbar{
+	display: none;
+}
+.Elements ol li{
+	height: 50px;
+	width: inherit;
+	display: flex;
+	align-items: center;
+	margin-left: -40px;
+	margin-top: 20px;
+}
+.Element-image{
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	margin-right: 20px;
+}
+.Element-image img{
+	height: 100%;
+	width: 100%;
+}
+
+
+/*latest-release*/
+
+.latest-release{
+	padding-left: 50px;
+	width: 70%;
+	height: 350px;
+	overflow-y: auto;
+}
+.latest-release::-webkit-scrollbar{
+	display: none;
+}
+.latest audio{
+	display: none;
+}
+.tracks{
+	width: 100%;
+	height: 250px;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+.latest{
+	height: 100px;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+	padding-bottom: 10px;
+}
+.latest span{
+	margin-left: 10px;
+}
+.poster{
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+}
+.poster img{
+	height: 100%;
+	width: 100%;
+}
+.dropdown{
+	width: 30px;
+	cursor: pointer;
+	display: flex;
+	flex-flow: row wrap;
+
+}
+.dropdown label{
+	display: none;
+	width: auto;
+	color: black;
+	border: none;
+	
+	margin-top: 10px; 
+	text-decoration: none;
+}
+.dropdown input{
+	display: none;
+}
+.dropdown:hover .buttons{
+	display: block;
+}
+#Play:checked ~ #Song{
+	display: block;
+}
+
+/*Popular-Artist*/
+
+.top-artists{
+	width: 90%;
+	height: 200px;
+	margin-left: 50px;
+}
+.Artists{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	overflow-x: scroll;
+}
+.Artists::-webkit-scrollbar{
+	display: none;
+}
+
+.Artists a{
+	text-decoration: none;
+	color: white;
+}
+.Artist-new{
+	margin-left: 10px;
+	text-align: center;
+}
+.artist-image{
+	height: 140px;
+	width: 140px;
+}
+.artist-image img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+.artist-image:hover{
+	transform: scale(1.2);
+}
+
+/*Genre*/
+
+.genre{
+	width: 90%;
+	margin-top: 20px;
+	margin-left: 50px;
+	height: 150px;
+	display: flex;
+	flex-flow: column wrap;
+	overflow-x: scroll;
+	background-color: black;
+	margin-top: 20px;
+}
+.genre::-webkit-scrollbar{
+	display: none;
+}
+.type{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-top: 25px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.type:hover{
+	transform: scale(1.2);
+}
+.type span{
+	margin-top: 60px;
+}
+.type-1{
+	background-image: url(love.jpg);
+	background-size: cover;
+	margin-left: 20px;
+}
+.type-2{
+	background-image: url(retro.jpg);
+	background-size: cover;
+}
+.type-3{
+	background-image: url(chill.jpg);
+	background-size: cover;
+}
+.type-4{
+	background-image: url(workout.jpg);
+	background-size: cover;
+}
+.type-5{
+	background-image: url(rock.jpg);
+	background-size: cover;
+}
+.type-6{
+	background-image: url(pop.jpg);
+	background-size: cover;
+}
+
+/* My-Moods*/
+
+.My-moods{
+	width: 90%;
+	margin-left: 50px;
+	margin-top: 20px;
+	height: 150px;
+	display: flex;
+	flex-flow: column wrap;
+	overflow-x: scroll;
+	align-items :space-between;
+}
+.My-moods::-webkit-scrollbar{
+	display: none;
+}
+.moods{
+	width: 290px;
+	height: 150px;
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.moods:hover{
+	transform: scale(1.2);
+}
+.mood-1{
+	background-image: url(party.jpg);
+	background-size: cover;
+}
+.mood-2{
+	background-image: url(electronic.jpg);
+	background-size: cover;
+}
+.mood-3{
+	background-image: url(roadtrip.jpg);
+	background-size: cover;
+}
+/* latest english*/
+.latest-tracks{
+	margin-top: 40px;
+	margin-left: 50px;
+	width: 90%;
+	height: 225px;
+	
+}
+.Song-container{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	overflow-x: scroll;
+}
+.Song-container::-webkit-scrollbar{
+	display: none;
+}
+.latest-image{
+	height: 120px;
+	width: 120px;
+	margin-right: 20px;
+}
+.latest-image img{
+	height: 100%;
+	width:100%;
+	border-radius: 10px;
+}
+
+.bottom_player{
+	height: 50px;
+	width: 80%;
+	position: fixed;
+	margin-left: 10%;
+	background-color: #171616;
+	bottom: 10%;
+	border-radius: 15px;
+	display: flex;
+	text-align: center;
+}
+.controls{
+	margin-top: 15px;
+}
+.song-name{
+	width: 30%;
+	margin:15px 10px;
+	text-align:center; 
+}
+.song-image{
+	margin-left: 20px;
+	height: 50px;
+	width: 50px;
+}
+.song-image img{
+	height: 100%;
+	width: 100%;
+}
